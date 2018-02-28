@@ -8,24 +8,24 @@ import java.util.Random;
  * @author janosi3
  *
  */
-public class tömbvéletlen {
+public class t�mbv�letlen {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int tomb [] = new int [10]; //10 elemű tömb lefoglalása
+		int tomb [] = new int [10]; //10 elemu tomb lefoglalasa
 		
-		Random veletlenobjektum = new Random(); //random tipusú véletlen objektum
+		Random veletlenobjektum = new Random(); //random tipusu veletlen objektum
 		
-		System.out.println("A tömb elemei:");
+		System.out.println("A tomb elemei:");
 		
 		for (int i = 0; i < tomb.length; i++) {
-			tomb [i] = veletlenobjektum.nextInt(50)+1;  //for ciklusba feltöltöm a tömb elemét véletlen számokkal 0-50 közötti
+			tomb [i] = veletlenobjektum.nextInt(50)+1;  //for ciklusba feltoltom veletlen szamokkal 0-50 kozotti
 			System.out.println(tomb[i]);
 		}
-		System.out.println("Visszafelé:");
+		System.out.println("Visszafele:");
 		for (int i = tomb.length-1; i >= 0; i--) {
 			
 			System.out.println(tomb[i]);
@@ -37,7 +37,7 @@ public class tömbvéletlen {
 				maxindex = i;	
 			}	
 		}
-		System.out.println("A legnagyobb érték:");
+		System.out.println("A legnagyobb ertek:");
 		System.out.println(tomb[maxindex]);
 			
 		
