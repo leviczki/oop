@@ -11,7 +11,7 @@ public class pi {
 		}
 		
 		System.out.println("Wallis-formula");
-		System.out.println("pi/2 Ã©rtÃ©ke " + pi);
+		System.out.println("pi/2 értéke " + pi);
 		System.out.println("pi: " + pi * 2);
 		
 		//Leibniz-formula
@@ -24,7 +24,7 @@ public class pi {
 			elojel *= -1;
 		}
 		System.out.println("Leibniz-formula");
-		System.out.println("pi/4 Ã©rtÃ©ke " + pi);
+		System.out.println("pi/4 értéke " + pi);
 		System.out.println("pi: " + pi * 4);
 	}	
 }
