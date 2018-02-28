@@ -1,4 +1,4 @@
-import java.util.Random;
+
 import java.util.Scanner;
 
 /**
@@ -9,7 +9,7 @@ import java.util.Scanner;
  * @author janosi3
  *
  */
-public class mértaniátlag {
+public class m�rtani�tlag {
 
 	/**
 	 * @param args
@@ -20,13 +20,13 @@ public class mértaniátlag {
 		Scanner bemenet = new Scanner(System.in);
 		
 		for (int i = 0; i < tomb.length; i++) {
-			System.out.println("Adja meg a "+ (i + 1) + "elemet");
+			System.out.println("Adja meg a "+ (i + 1) + ".elemet");
 			tomb[i] = bemenet.nextDouble();
 		}
 		
-		double mertani_atlag = 1;
+		//double mertani_atlag = 1;
 		
-		
+		bemenet.close();
 
 	}
 
