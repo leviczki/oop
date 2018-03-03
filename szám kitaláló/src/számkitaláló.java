@@ -21,6 +21,8 @@ public static void main(String args[]) {
 		out.println (véletlenSzám);
 		out.println("Köszönöm a játékot.");
 		}  
+	
 	billentyûzet.close();
+	
 	}
 }
