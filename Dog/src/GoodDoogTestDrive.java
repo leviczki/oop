@@ -11,7 +11,7 @@ public class GoodDoogTestDrive {
 		System.out.println("Dog two: " + two.getSize());
 		one.bark();
 		two.bark();
-		
+
 		GoodDog[] pets;
 		pets = new GoodDog[7];
 		
