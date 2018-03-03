@@ -10,5 +10,5 @@ public static void main(String args[]) {
 
 	myFrame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
 	myFrame.setVisible(true);
-	}
+ }
 }
