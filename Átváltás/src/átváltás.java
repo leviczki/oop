@@ -11,7 +11,7 @@ public static void main(String args[]) {
 	int ötös = amiMaradt / 5; 
 	amiMaradt = amiMaradt % 5; 
 	int egyes = amiMaradt;
-	
+
 	out.println("Ami a " + teljes + " forintodból lett"); 
 	out.println(ötvenes + " ötvenes");
 	out.println(tízes + " tízes");
