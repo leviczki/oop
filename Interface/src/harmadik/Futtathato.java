@@ -6,7 +6,7 @@ import masik.SzinesPont;
 
 import sajat.ISzinezheto;
 
-public class Futtatható {
+public class Futtathato {
 
 	
 	public static void main(String[] args) {
