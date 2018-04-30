@@ -2,7 +2,7 @@ package sajat.masodik;
 
 import sajat.elso.Szam;
 
-public class Futtatható {
+public class Futtathato {
 
 	/**
 	 * @param args
