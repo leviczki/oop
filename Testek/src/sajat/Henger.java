@@ -1,7 +1,7 @@
 package sajat;
 
 
-public class Henger extends Hasáb {
+public class Henger extends Hasab {
 	
 	private int sugar;
 	

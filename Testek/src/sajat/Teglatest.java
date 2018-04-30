@@ -1,6 +1,6 @@
 package sajat;
 
-public class Teglatest extends Hasáb {
+public class Teglatest extends Hasab {
 
 	private int a;
 	private int b;
