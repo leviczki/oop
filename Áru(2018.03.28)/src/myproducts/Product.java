@@ -2,37 +2,37 @@ package myproducts;
 
 public class Product {
 	
-	private String név;
-	private int nettóár;
-	private int áfakulcs;
+	private String nev;
+	private int nettoAr;
+	private int Afakulcs;
 	
 	
-	public Product(String név, int nettóár, int áfakulcs) {
-		this.név = név;
-		this.nettóár = nettóár;
-		this.áfakulcs = áfakulcs;
+	public Product(String nev, int nettoAr, int Afakulcs) {
+		this.nev = nev;
+		this.nettoAr = nettoAr;
+		this.Afakulcs = Afakulcs;
 		
 	}
 
-	public int bruttóÁr() {
-		return (int) (nettóár * (1 + áfakulcs / 100.0));
+	public int bruttoAr() {
+		return (int) (nettoAr * (1 + Afakulcs / 100.0));
 		}
 
 	@Override
 	public String toString() {
-		return "Product [név=" + név + ", bruttóÁr()=" + bruttóÁr() + "]";
+		return "Product [nev=" + nev + ", bruttoAr()=" + bruttoAr() + "]";
 	}
 	
-	public void növelés(int szazalek){
-		nettóár = (int) (nettóár * (1+ szazalek / 100.0));
+	public void noveles(int szazalek){
+		nettoAr = (int) (nettoAr * (1+ szazalek / 100.0));
 		}
 	
 	
-	public int hasonlítás(Product termék) {
-		if (bruttóÁr() > termék.bruttóÁr()){
+	public int hasonlitas(Product termek) {
+		if (bruttoAr() > termek.bruttoAr()){
 		return 1;
 		}
-		else if (bruttóÁr() < termék.bruttóÁr()){
+		else if (bruttoAr() < termek.bruttoAr()){
 			return 0;
 		}
 		else{
