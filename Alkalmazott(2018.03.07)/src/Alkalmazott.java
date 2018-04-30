@@ -1,20 +1,20 @@
 
 public class Alkalmazott {
 	
-	private String nev; //csak az alkalmazott osztályon belül lehet látni(private)
-	private long fizetes;//csak az alkalmazott osztályon belül lehet látni(private)
+	private String nev; //csak az alkalmazott osztalyon belul lehet latni(private)
+	private long fizetes;//csak az alkalmazott osztalyon belul lehet latni(private)
 	
 	
 	
 	
-	//Fizetés növelése:
+	//Fizetes novelese
 	public void fizetesNovelese(long novekmeny) {
 		fizetes += novekmeny;
 	}
 	
 	
 	
-	//stringbe összefűzés source->tostring
+	//stringbe osszefuzes source->tostring
 
 	@Override
 	public String toString() {
@@ -23,7 +23,7 @@ public class Alkalmazott {
 	
 	
 	
-	//getter/setter metódus source -> generate getters/setters
+	//getter/setter metodus source -> generate getters/setters
 
 	public String getNev() {
 		return nev;
@@ -44,18 +44,18 @@ public class Alkalmazott {
 	
 	
 	
-	//egy bizonyos intervallumba van a fizetés?:
-	public boolean fizetésIntervallumokKözött(long alsóhatár, long felsőhatár) {
-		return fizetes >= alsóhatár && fizetes<= felsőhatár;
+	//egy bizonyos intervallumba van a fizetes?:
+	public boolean fizetesIntervallumokKozott(long alsohatar, long felsohatar) {
+		return fizetes >= alsohatar && fizetes<= felsohatar;
 	}
 	
-	//adós cucc...:
+	//ados cucc...:
 	public long fizetendoAdo() {
-		//kényszerített konverzió(long)
+		//kenyszeritett konverzio(long)
 		return (long)(fizetes * 0.16 * 12);
 	}
-	//nagyobb-e a fizetése mint a másiknak
-	public boolean fizetésNagyobbMint(Alkalmazott masik) {
+	//nagyobb-e a fizetese mint a masiknak
+	public boolean fizetesNagyobbMint(Alkalmazott masik) {
 		return fizetes > masik.fizetes;
 	}
 	

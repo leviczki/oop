@@ -19,71 +19,71 @@ public class AlkalmazottatHasznalo {
 		//b.o statikus tipus        j.o dinamikus tipus
 		Alkalmazott alkalmazottobj = new Alkalmazott();
 		
-		//private módosító még nem volt :
-		//alkalmazottobj.nev = "Kiss István";
+		//private modositomeg nem volt :
+		//alkalmazottobj.nev = "Kiss Istvan";
 		//alkalmazottobj.fizetes = 10;
 		
-		//adatrejtés miatt (setter/getter):
-		//név és fizetés beállítása:
-		alkalmazottobj.setNev("Kiss István");
+		//adatrejtes miatt (setter/getter):
+		//nev es fizete�s beallitasa:
+		alkalmazottobj.setNev("Kiss Istvan");
 		alkalmazottobj.setFizetes(10);
 		
 		System.out.println(alkalmazottobj.toString());
-		System.out.println(alkalmazottobj); //nem muszáj a tostring metódus
+		System.out.println(alkalmazottobj); //nem muszaj a tostring metodus
 		
-		//fizetés átállítása:
+		//fizetes beallitasa:
 		alkalmazottobj.fizetesNovelese(5);
-		//kiiratja a módosított fizetést és a nevet is
+		//kiiratja a modositott fizetest es a nevet is
 		System.out.println(alkalmazottobj);
 		
-		//(getter/setter)kiiratás csak a nevére vagyunk kíváncsiak:
+		//(getter/setter)kiiratas csak a nevere vagyunk kivancsiak:
 		System.out.println("Alkalmazott neve: " + alkalmazottobj.getNev());
-		//(getter/setter)csak a (módosított)fizetés kiiratása:
-		System.out.println("Fizetése: " + alkalmazottobj.getFizetes());
+		//(getter/setter)csak a (modositott)fizetes kiiratasa:
+		System.out.println("Fizetese: " + alkalmazottobj.getFizetes());
 		
-		//meghívjuk a fizetésintervallumokközött metódust majd sysouttal kiiratja h igaz vagy hamis-e
+		//meghivjuk a fizetesintervallumokkozott metodust majd sysouttal kiiratja h igaz vagy hamis-e
 		System.out
-				.println("A fizetés 10 és 50 között van: " + alkalmazottobj.fizetésIntervallumokKözött(10, 50));
+				.println("A fizetes 10 es 50 kozott van: " + alkalmazottobj.fizetesIntervallumokKozott(10, 50));
 		System.out
-		.println("A fizetés 5 és 6 között van: " + alkalmazottobj.fizetésIntervallumokKözött(5, 6));
+		.println("A fizetes 5 es 6 kozott van: " + alkalmazottobj.fizetesIntervallumokKozott(5, 6));
 		
-		//kiiratja a kiszámolt adót:
+		//kiiratja a kiszamolt adot:
 		System.out.println(alkalmazottobj.fizetendoAdo());
 		
-		//nagyobb a másik metódus használata:
+		//nagyobb a masik metodus hasznalata:
 		
-		//másik objektum létrehozása:
+		//masik objektum letrehozasa:
 		Alkalmazott alkalmazott2 = new Alkalmazott();
 		alkalmazott2.setNev("Kiss Klaudia");
 		alkalmazott2.setFizetes(35);
 		alkalmazott2.fizetesNovelese(11);
 		System.out.println(alkalmazott2);
 		
-		//összehasonlítás:
+		//osszehasonlitas:
 			System.out
-					.println("István fizetése a nagyobb: " + alkalmazottobj.fizetésNagyobbMint(alkalmazott2));
+					.println("Istvan fizetese a nagyobb: " + alkalmazottobj.fizetesNagyobbMint(alkalmazott2));
 			System.out
-					.println("Klaudia fizetése a nagyobb: " + alkalmazott2.fizetésNagyobbMint(alkalmazottobj));
+					.println("Klaudia fizetese a nagyobb: " + alkalmazott2.fizetesNagyobbMint(alkalmazottobj));
 			
-		//alkalmazottak tömb:
-				//5 elemű alkalmazottakat tartalmazó pointer tömb(objektumtömb)
+		//alkalmazottak tomb:
+				//5 elemo alkalmazottakat tartalmazo pointer tomb(objektumtomb)
 			Alkalmazott[] alkalmazottak = new Alkalmazott[5];
-			//Alkalmazott alkalmazottak[] = new Alkalmazott[5]; -> ez is elfogadható
-				//alkalmazottak létrehozása: (ciklusszervezéssel)(objektumtömb feltöltése)
+			//Alkalmazott alkalmazottak[] = new Alkalmazott[5]; -> ez is elfogadhato
+				//alkalmazottak letrehozasa: (ciklusszervezessel)(objektumtomb feltoltese)
 			for (int i = 0; i < alkalmazottak.length; i++) {
-				 	alkalmazottak[i] = new Alkalmazott();//még null értékű
-				 	alkalmazottak[i].setNev("XY");//név beállítása
-				 	alkalmazottak[i].setFizetes((long)(Math.random() * 50));//fizetés beállítása random számmal
-				 	System.out.println(alkalmazottak[i]);//alkalmazottak adatainak kiírása
+				 	alkalmazottak[i] = new Alkalmazott();//meg null erteku
+				 	alkalmazottak[i].setNev("XY");//nev beallitasa
+				 	alkalmazottak[i].setFizetes((long)(Math.random() * 50));//fizetes beallitasa random szammal
+				 	System.out.println(alkalmazottak[i]);//alkalmazottak adatainak kiiratasa
 			}
-			//kinek a legmagasabb a fizetése a tömbben:(maxkeres)
+			//kinek a legmagasabb a fizetese a tombben:(maxkeres)
 			int maxelem = 0;
 			for (int i = 1; i < alkalmazottak.length; i++) {
 				if (alkalmazottak[i].getFizetes() > alkalmazottak[maxelem].getFizetes()){
 					maxelem = i;
 				}		   
 			}
-			System.out.println("Max fizetésű almalmazott: " + alkalmazottak[maxelem]);
+			System.out.println("Max fizetesu almalmazott: " + alkalmazottak[maxelem]);
 
 	}
 }
