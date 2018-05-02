@@ -15,31 +15,31 @@ public class Proba2 {
 		int tomb[] = new int [meret];
 		Scanner bemenet = new Scanner (System.in);
 		
-		System.out.println("Kérem a számokat:");
+		System.out.println("Kerem a szamokat:");
 		for (int i = 0; i < tomb.length; i++) {
 			boolean rosszAdat = true;
 			
 			do {
-				System.out.println("Kerem adja meg a(z)" + (i + 1) + ". egész számot!");
-				System.out.println("Szám:");
+				System.out.println("Kerem adja meg a(z)" + (i + 1) + ". egesz szamot!");
+				System.out.println("Szam:");
 				
 				try {
 					tomb[i] = Integer.parseInt(bemenet.nextLine());
 					rosszAdat = false;
 					
 				/*} catch (InputMismatchException e) {
-					System.out.println("Nem egész szám");
+					System.out.println("Nem egesz szam");
 					System.out.println("Inp.Mis.");*/
 				} catch (NumberFormatException e) {
-					System.out.println("nem egész számot kaptunk");
+					System.out.println("nem egesz szamot kaptunk");
 				} catch (Exception e) {
-					System.out.println("Elkaptuk a kivételt(Exeption)");
+					System.out.println("Elkaptuk a kivetelt(Exeption)");
 				}
 				
 			} while (rosszAdat);
 			
 		}
-		System.out.println("A beolvasott értékek:");
+		System.out.println("A beolvasott ertekek:");
 		for (int i : tomb) {
 		System.out.println(i);
 		}

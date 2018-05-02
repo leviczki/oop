@@ -3,50 +3,50 @@ public class Alkalmazott {
 	
 	private String nev;
 	private int kor;
-	private long fizetés;
+	private long fizetes;
 	
-	private static int nyugdíjkorhatár = 65;
+	private static int nyugdijkorhatar = 65;
 
-	public Alkalmazott(String nev, int kor, long fizetés) {
+	public Alkalmazott(String nev, int kor, long fizetes) {
 		this.nev = nev;
 		this.kor = kor;
-		this.fizetés = fizetés;
+		this.fizetes = fizetes;
 	}
 	
 	
 	public Alkalmazott(String nev, int kor) {
 		this.nev = nev;
 		this.kor = kor;
-		this.fizetés = kor * 10000;
+		this.fizetes = kor * 10000;
 	}
 	
-	public int hátravan(){
-		return nyugdíjkorhatár-kor;
+	public int hatravan(){
+		return nyugdijkorhatar-kor;
 	}
 
 
 	@Override
 	public String toString() {
-		return "Alkalmazott nev: " + nev + ",\t kor: " + kor + ",\t fizetés: "
-				+ fizetés + ",\t hátravan:  " + hátravan() + "";
+		return "Alkalmazott nev: " + nev + ",\t kor: " + kor + ",\t fizetes: "
+				+ fizetes + ",\t hatravan:  " + hatravan() + "";
 	}
 
 
-	public static void setNyugdíjkorhatár(int nyugdíjkorhatár) {
-		Alkalmazott.nyugdíjkorhatár = nyugdíjkorhatár;
+	public static void setNyugdijkorhatar(int nyugdijkorhatar) {
+		Alkalmazott.nyugdijkorhatar = nyugdijkorhatar;
 	}
 	
-	public static int getNyugdíjkorhatár() {
-		return nyugdíjkorhatár;
+	public static int getNyugdijkorhatar() {
+		return nyugdijkorhatar;
 	}
 
 
-	public static Alkalmazott többÉveVanHátraNyugdíjig(Alkalmazott elsőAlkalmazott, Alkalmazott másodikAlkalmazott) {
-		if (elsőAlkalmazott.hátravan()>másodikAlkalmazott.hátravan()) {
-			return elsőAlkalmazott;
+	public static Alkalmazott tobbEveVanHatraNyugdijig(Alkalmazott elsoAlkalmazott, Alkalmazott masodikAlkalmazott) {
+		if (elsoAlkalmazott.hatravan()>masodikAlkalmazott.hatravan()) {
+			return elsoAlkalmazott;
 		}
 		else{ 
-			return másodikAlkalmazott;
+			return masodikAlkalmazott;
 		}
 	}
 }

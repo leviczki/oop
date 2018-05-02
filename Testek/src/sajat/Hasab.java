@@ -1,9 +1,9 @@
 package sajat;
 
-public abstract class Hasáb {
+public abstract class Hasab {
 		protected int magassag;
 
-		public Hasáb(int magassag) {
+		public Hasab(int magassag) {
 			this.magassag = magassag;
 		}
 
@@ -19,7 +19,7 @@ public abstract class Hasáb {
 			return getAlapterulet () * magassag;
 		}
 		
-		public boolean Nagyobbe(Hasáb masik) {
+		public boolean Nagyobbe(Hasab masik) {
 			return getTerfogat() > masik.getTerfogat();
 		}
 		

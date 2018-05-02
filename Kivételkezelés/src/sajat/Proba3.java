@@ -20,28 +20,28 @@ public class Proba3 {
 		
 		//Scanner bemenet = new Scanner (System.in);
 		
-		System.out.println("Kérem a számokat:");
+		System.out.println("Kerem a szamokat:");
 		for (int i = 0; i < tomb.length; i++) {
 			
 			try {
 				InputStreamReader bemenetolvaso = new InputStreamReader(System.in);
-				BufferedReader beolvasás = new BufferedReader(bemenetolvaso);
+				BufferedReader beolvasas = new BufferedReader(bemenetolvaso);
 				
-				//String sztring = beolvasás.readLine();
+				//String sztring = beolvasas.readLine();
 				
 				boolean rosszAdat = true;
 				
 				do {
-					System.out.println("Kerem adja meg a(z)" + (i + 1) + ". egész számot!");
-					System.out.println("Szám:");
+					System.out.println("Kerem adja meg a(z)" + (i + 1) + ". egesz szamot!");
+					System.out.println("Szam:");
 					
 					try {
 						//tomb[i] = Integer.parseInt(bemenet.nextLine());
-						tomb [i] = Integer.valueOf(beolvasás.readLine()).intValue();
+						tomb [i] = Integer.valueOf(beolvasas.readLine()).intValue();
 						rosszAdat = false;
 						
 					} catch (NumberFormatException e) {
-						System.out.println("nem egész számot kaptunk");
+						System.out.println("nem egesz szamot kaptunk");
 					}
 					
 				} while (rosszAdat);
@@ -53,7 +53,7 @@ public class Proba3 {
 			
 			
 		}
-		System.out.println("A beolvasott értékek:");
+		System.out.println("A beolvasott ertekek:");
 		for (int i : tomb) {
 		System.out.println(i);
 		}
