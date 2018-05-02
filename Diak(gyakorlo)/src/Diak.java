@@ -1,7 +1,8 @@
 
-//Definialjon egy diak osztalyt, amely kepes tarolni
-//egy diak nevet
-//es atr hogy hany forint va a zsebeben
+/*Definialjon egy diak osztalyt, amely kepes tarolni
+egy diak nevet
+es azt hogy hany forint va a zsebeben
+*/
 public class Diak {
 	String nev ;
 	int forint = 500;
@@ -18,9 +19,10 @@ public class Diak {
 		return forint;
 	}
 	
-//Definialjon egy sorozik metodust, amely parametereben kapja meg a sor arat
-//amivel csokkenti a penz mennyiseget
-//ha kitelik belole, es ilyenkor igaz erteket ad vissza, egyebkent hamisat
+/*Definialjon egy sorozik metodust, amely parametereben kapja meg a sor arat
+amivel csokkenti a penz mennyiseget
+ha kitelik belole, es ilyenkor igaz erteket ad vissza, egyebkent hamisat
+*/
 	public boolean sorozik(int sorAr) {
 		if (forint >= sorAr) {
 			forint = forint-sorAr;
@@ -28,6 +30,7 @@ public class Diak {
 		}else {
 			return false;
 		}
+		
 		
 	}
 
