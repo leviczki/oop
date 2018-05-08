@@ -14,6 +14,7 @@ public class OvatosDiak extends Diak {
 	}
 
 	
+<<<<<<< HEAD
 //Definialja felul a sorozik metodust ugy, hogy
 //csak akkor csokkenti az ital araval a penz mennyiseget
 //ha meg marad az utikoltsegre
@@ -32,7 +33,35 @@ public class OvatosDiak extends Diak {
 hogy a "Penzmag:" szoveg utan kiirja a utikoltsegen 
 felul meglevo penz mennyiseget.
 */
+=======
+
+		
+/*Definialja felul a sorozik metodustugy, hogy
+csak akkor csokkenti az ital araval a penz mennyiseget
+ha meg marad az utikoltsegre
+es csak ekkor ad vissza igaz erteket
+(ha csak reszben fedezne amaradek penz az italt, akkor mar ne vonja le)
+*/
+	//@Override
+	public boolean sorozik(int sorAr) {
+		if (getForint()>= sorAr+utiKoltseg  ) {
+			return super.sorozik(sorAr);
+		} else {
+			return false;
+		}
+		
+	}
+
+>>>>>>> branch 'master' of https://github.com/LuciaJohns/oop.git
 	
+<<<<<<< HEAD
+=======
+/*Definialja az osztalyra a toString metodust ugy,
+hogy a "Penzmag:" szoveg utan kiirja a utikoltsegen 
+felul meglevo penz mennyiseget.
+*/
+	
+>>>>>>> branch 'master' of https://github.com/LuciaJohns/oop.git
 	//@Override
 	public String toString() {
 		return "Penzmag:" + utiKoltseg +

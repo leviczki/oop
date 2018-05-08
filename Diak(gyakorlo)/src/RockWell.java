@@ -7,7 +7,11 @@ public class RockWell {
 		// TODO Auto-generated method stub
 
 //Hozzon letre egy OvatosDiak peldanyt, tetszoleges adatokkal!
+<<<<<<< HEAD
 		OvatosDiak diak = new OvatosDiak("xy", 500, 300);
+=======
+		OvatosDiak diak = new OvatosDiak("xy", 600, 300);
+>>>>>>> branch 'master' of https://github.com/LuciaJohns/oop.git
 		
 		
 /*Itasson meg a peldannyal 300Ft-os sort annyiszor
