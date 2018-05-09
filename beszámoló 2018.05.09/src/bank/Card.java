@@ -27,6 +27,7 @@ public class Card {
 	
 	public boolean penzfelvetel(int osszeg){
 		if((egyenleg - osszeg)>0){
+			egyenleg-=osszeg;
 			return true;
 		}else return false;
 	}

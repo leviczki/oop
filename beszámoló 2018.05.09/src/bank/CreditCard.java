@@ -16,10 +16,12 @@ public class CreditCard extends Card {
 
 	@Override
 	public boolean penzfelvetel(int osszeg) {
-		if((hitelkeret - (getEgyenleg() - osszeg)) > 0){
+		if((hitelkeret + getEgyenleg() >= osszeg){
+			if(getEgyenleg() >= osszeg){
+				super.
+			}
 			return true;
-		}else return false;
-		
+			}
 	}
 
 	@Override
